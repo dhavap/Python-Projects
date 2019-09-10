@@ -1,11 +1,14 @@
 from tkinter import *
 import tkinter as tk
 import main
+import func
 
 def load_gui(self, w, h): # called in main
     #====================BUTTONS========================
     # Browse button1
-    self.btn_browse1 = tk.Button(self.master, width = 15, height = 1, text = 'Browse...', font=('20'))
+    self.btn_browse1 = tk.Button(self.master, width = 15, height = 1, text = 'Browse...', font=('20'), \
+                                 command=lambda: func.browse_folder(self))
+                                 
     self.btn_browse1.grid(row = 0, column = 1, padx=(30,0), pady=(50,0) )
     # Browse button2
     self.btn_browse2 = tk.Button(self.master, width = 15, height = 1, text = 'Browse...', font=('20'))

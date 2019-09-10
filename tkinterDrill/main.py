@@ -6,6 +6,7 @@
 from tkinter import *
 import tkinter as tk
 import gui
+import func
 
 class ParentWindow(Frame):
     def __init__(self, master, *args, **kwargs):
