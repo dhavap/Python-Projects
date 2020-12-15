@@ -47,7 +47,7 @@ def check_data_exists(field):
 
 def ping_api(topicChoice, beginDate, endDate):
     querystring = {
-        'api-key': '8o3Om7xXYbVx51hQ8jaZjH4dwKQK3Axo',
+        'api-key': '***********',    #get your own API key from the NYT API documentation site
         'q': topicChoice,
         'begin_date': beginDate,
         'end_date': endDate,
