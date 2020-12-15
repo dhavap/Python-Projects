@@ -104,7 +104,6 @@ def export_file(df):
             df.to_csv(export_file_path, header=True)
             print('Successfully exported as csv file')
         root.destroy()
-    #canvas.create_text(text="Please select desired file type.")
     saveAsButton_CSV = tk.Button(text='Export CSV', command=partial(
         dialogue_box, '.csv'), bg='#e63946', fg='#f1faee', font=('helvetica', 12, 'bold'))
     saveAsButton_Excel = tk.Button(text='Export Excel', command=partial(
